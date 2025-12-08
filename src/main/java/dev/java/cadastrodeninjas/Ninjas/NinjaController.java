@@ -28,16 +28,16 @@ public class NinjaController {
         return "Ninja Criado";
     }
     //Mostrar todos os Ninjas
-    @GetMapping("/todos")
+    @GetMapping("/listar")
     public List<NinjaModel> mostrarTodosOsNinjas(){
 
         return  ninjaService.listarNinjas();
     }
 
     //Mostrar Ninja por ID
-    @GetMapping("/id")
-    public String mostrarNinjaPorId(){
-        return "Ninja";
+    @GetMapping("/listar/{id}")
+    public NinjaModel listarNinjaPorId(@PathVariable int id){
+        return ninjaService.listarNinjasPorId(id);
 
     }
 
