@@ -34,4 +34,10 @@ public class NinjaService {
 
         return ninjaRepository.save(ninja);
     }
+
+    //Deleta o Ninja da minha tb_cadastro
+    public void deletarNinjaPorId(long id){
+
+        ninjaRepository.deleteById(id);
+    }
 }
