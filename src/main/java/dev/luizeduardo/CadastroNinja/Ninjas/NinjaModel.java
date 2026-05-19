@@ -1,6 +1,9 @@
-package dev.luizeduardo.CadastroNinja;
+package dev.luizeduardo.CadastroNinja.Ninjas;
 
+import dev.luizeduardo.CadastroNinja.Missoes.MissoesModel;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 //Entity Ele transforma uma classe em uma entidade do DB
 @Entity
@@ -12,6 +15,10 @@ public class NinjaModel {
     private String nome;
     private String email;
     private int idade;
+
+    @ManyToOne
+    @JoinColumn(name = "misssoes_id")
+    private MissoesModel missoes;
 
     public NinjaModel() {
     }
