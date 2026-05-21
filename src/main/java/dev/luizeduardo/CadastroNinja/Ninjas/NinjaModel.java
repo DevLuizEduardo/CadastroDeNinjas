@@ -1,5 +1,6 @@
 package dev.luizeduardo.CadastroNinja.Ninjas;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import dev.luizeduardo.CadastroNinja.Missoes.MissoesModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
