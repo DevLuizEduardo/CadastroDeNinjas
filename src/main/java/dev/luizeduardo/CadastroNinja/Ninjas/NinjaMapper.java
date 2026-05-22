@@ -32,7 +32,7 @@ public class NinjaMapper {
         ninjaDTO.setIdade(ninjaModel.getIdade());
         ninjaDTO.setNome(ninjaModel.getNome());
         ninjaDTO.setImgUrl(ninjaModel.getImgUrl());
-        ninjaDTO.setRank(ninjaDTO.getRank());
+        ninjaDTO.setRank(ninjaModel.getRank());
         ninjaDTO.setMissoes(ninjaModel.getMissoes());
 
         return ninjaDTO;
